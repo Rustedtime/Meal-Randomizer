@@ -1,0 +1,83 @@
+Make sure each menu item is separated by an asterisk
+
+ENTREES
+*
+Sloppy Joe
+    -1 lb ground beef/turkey
+    -1 can sloppy joe sauce
+*
+Taco
+    -1 lb ground beef/turkey
+    -taco seasoning
+    -tortilla
+*
+Enchillada
+    -1 lb ground beef/turkey
+    -taco seasoning
+    -tortilla
+    -Rotel tomatos
+    -cheese
+    -enchillada sauce
+*
+Curry
+    -chicken
+    -onion
+    -carrot
+    -potato
+    -curry mix
+*
+Grilled chicken alfredo
+    -chicken
+    -alfredo sauce
+    -pasta
+    -broccoli
+*
+Tater tot cassorole
+    -tater tots
+    -cream of mushroom soup
+    -green beans
+    -cheese
+    -1 lb ground beef/turkey
+*
+Biscuits and gravy
+    -biscuits
+    -gravy
+    -sausage
+*
+SIDES
+*
+Sweet corn tamallito
+    -canned corn
+*
+Baked beans
+    -can of baked beans
+*
+French fries
+    -french frys
+*
+Fresh fruit
+    -fruit
+*
+Grits
+    -cheese
+    -Grits
+*
+Salad
+    -lettuce/spinach
+    -dressing
+    -tomatos
+    -croutons
+*
+Chips and salsa
+    -chips
+    -salsa
+*
+DESSERTS
+*
+Cookies
+    -cookies
+*
+Apple pie
+    -apples
+*
+END
