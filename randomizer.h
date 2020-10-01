@@ -22,7 +22,6 @@ class Randomizer
     Randomizer(string fileName, int numMeals);
     void initialize();
     void randomize();
-    void printShoppingList();
 };
 
 #endif // RANDOMIZER_H

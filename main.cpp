@@ -21,7 +21,6 @@ int main()
     Randomizer r(fileName, numMeals);
     r.initialize;
     r.randomize;
-    r.printShoppingList;
 
     return 0;
 }
