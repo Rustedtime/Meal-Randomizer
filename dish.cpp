@@ -7,10 +7,10 @@ std::ostream& operator<<(std::ostream& out, const Dish &d)
     out << d.name << "\n";
     for (unsigned int i = 0; i < d.recipe.size(); i++)
     {
-        out << "\t" << d.recipe[i];
+        out << "\t" << d.recipe[i] << "\n";
     }
 
-    out << "*\n";
+    out << "\n\n";
 
     return out;
 }
