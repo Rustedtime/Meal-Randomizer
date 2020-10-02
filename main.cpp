@@ -19,8 +19,8 @@ int main()
         if (numMeals <= 0) cout << "Please enter a number greater than 0.\n";
     }
     Randomizer r(fileName, numMeals);
-    r.initialize;
-    r.randomize;
+    r.generateMenu();
+    r.randomize();
 
     return 0;
 }

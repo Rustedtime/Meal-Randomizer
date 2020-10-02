@@ -1,3 +1,4 @@
+//randomizer.h
 #ifndef RANDOMIZER_H
 #define RANDOMIZER_H
 
@@ -7,6 +8,10 @@
 using std::vector;
 using std::string;
 
+/***************************************************
+ * Class: Randomizer
+ * Generates a random menu based off of a menu file
+ * *************************************************/
 class Randomizer
 {
     private:
@@ -15,12 +20,11 @@ class Randomizer
     vector<Dish> entrees;
     vector<Dish> sides;
     vector<Dish> desserts;
-    void generateMenu();
 
     public:
-    Randomizer();
-    Randomizer(string fileName, int numMeals);
-    void initialize();
+    Randomizer(): fileName(string()), numMeals(0), entrees(vector<Dish>()), sides(vector<Dish>()), desserts(vector<Dish>()) {}
+    Randomizer(string fileName, int numMeals): fileName(fileName), numMeals(numMeals) {}
+    void generateMenu();
     void randomize();
 };
 
