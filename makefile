@@ -1,11 +1,12 @@
 CXX = g++
 CXXFLAGS = -Wall -g
 
-randomizer: main.o randomizer.o dish.o
-	$(CXX) $(CXXFLAGS) -o randomizer main.o randomizer.o dish.o
 
-main.o: main.cpp randomizer.h
+Randomizer: main.o randomizer.o dish.o
+	$(CXX) $(CXXFLAGS) -o Randomizer main.o randomizer.o dish.o
 
-randomizer.o: randomizer.h dish.h
+main.o: main.cpp
 
-dish.o: dish.h
+randomizer.o: randomizer.cpp
+
+dish.o: dish.cpp
