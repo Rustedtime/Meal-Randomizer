@@ -9,7 +9,7 @@
 void Randomizer::generateMenu()
 {
     std::ifstream fin;
-    fin.open(fileName);
+    fin.open(fileName.c_str());
     if (fin.is_open())
     {
         // prepare file for extraction
@@ -47,9 +47,10 @@ void Randomizer::generateMenu()
 void Randomizer::randomize()
 {
     // create the file name
-    std::time_t now = time(0);
-    std::string shoppingList = "random_menu_" + now;
-    shoppingList += ".txt";
+    //std::time_t now = time(0);
+    //std::string shoppingList = "randomMenu" + now;
+    //shoppingList += ".txt";
+    std::string shoppingList = "randomMenu.txt";
     std::ofstream fout;
     fout.open(shoppingList);
     
