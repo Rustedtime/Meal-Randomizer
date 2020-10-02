@@ -1,6 +1,6 @@
 Make sure each menu item is separated by an asterisk
 
-ENTREES
+/ENTREES/
 *
 Sloppy Joe
     -1 lb ground beef/turkey
@@ -44,7 +44,7 @@ Biscuits and gravy
     -gravy
     -sausage
 *
-SIDES
+/SIDES/
 *
 Sweet corn tamallito
     -canned corn
@@ -72,7 +72,7 @@ Chips and salsa
     -chips
     -salsa
 *
-DESSERTS
+/DESSERTS/
 *
 Cookies
     -cookies
@@ -80,4 +80,4 @@ Cookies
 Apple pie
     -apples
 *
-END
+/END/
