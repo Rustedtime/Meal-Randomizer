@@ -22,6 +22,7 @@ void Randomizer::generateMenu()
             fin >> menuItem;
             entrees.push_back(menuItem);
         }
+        getline(fin, line);
         while (line != "*") getline(fin, line);
         
         // generate sides
@@ -30,6 +31,7 @@ void Randomizer::generateMenu()
             fin >> menuItem;
             sides.push_back(menuItem);
         }
+        getline(fin, line);
         while (line != "*") getline(fin, line);
         // generate desserts
         while (fin.peek() != '/')
@@ -63,7 +65,8 @@ void Randomizer::randomize()
             {
                 std::default_random_engine generator;
                 std::uniform_int_distribution<int> distribution(0, entrees.size() - 1);
-                fout << entrees[distribution(generator)];
+                int random = distribution(generator);
+                fout << entrees[random];
             }
             if (sides.size())
             {
@@ -78,6 +81,8 @@ void Randomizer::randomize()
                 fout << desserts[distribution(generator)];
             }
         }
+        std::cout << "Shopping list created.\n";
+        fout.close();
     }
     else std::cout << "Error creating shopping list";
 }
